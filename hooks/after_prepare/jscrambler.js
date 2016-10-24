@@ -9,11 +9,11 @@ jscrambler.protectAndDownload({
   },
   'applicationId': 'YOUR_APP_ID',
   'filesSrc': [
-    './www/*.{js,html}',
-    './www/js/*.js',
-    './www/templates/*.html'
+    './platform/android/assets/www/*.{js,html}',
+    './platform/android/assets/www/js/*.js',
+    './platform/android/assets/www/templates/*.html',
   ],
-  'filesDest': './dist',
+  'filesDest': './',
   'params': [
     {
       'name': 'whitespaceRemoval'
@@ -65,5 +65,5 @@ jscrambler.protectAndDownload({
   }
 })
 .then(function () {
-  console.log('All done!');
+  console.log('Jscrambler done!');
 });
